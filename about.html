@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Ultimate Gorilla Tag</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, black, red);
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #111;
+            position: relative;
+        }
+
+        header .logo img {
+            height: 50px;
+        }
+
+        nav {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: black;
+            border-radius: 20px;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: white;
+            padding: 15px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #333;
+            color: red;
+        }
+
+        nav .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: black;
+            min-width: 160px;
+            z-index: 1;
+            border-radius: 5px;
+        }
+
+        nav .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            display: block;
+            text-align: center;
+        }
+
+        nav .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .about-us {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .about-us h1 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .button {
+            background-color: black;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            border: 2px solid red;
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(255, 0, 0, 1);
+            background-color: red;
+        }
+
+        /* Discord Section */
+        .discord-section {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .discord-button {
+            background-color: #7289DA;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            box-shadow: 0 0 10px rgba(114, 137, 218, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            border: 2px solid #7289DA;
+        }
+
+        .discord-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(114, 137, 218, 1);
+            background-color: #5B6E9C;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="IMG_1018.webp" alt="Ultimate Gorilla Tag Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Tournament</a>
+                    <div class="dropdown-content">
+                        <a href="matches.html">Matches</a>
+                        <a href="gamemode.html">Gamemode</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">About Us</a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Information</a>
+                        <a href="https://discord.gg/ultimategorillatag" target="_blank">Discord Server</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-us">
+            <h1>About Us</h1>
+            <div class="buttons">
+                <!-- Button One: Information -->
+                <a href="index.html" class="button">Information</a>
+
+                <!-- Button Two: Discord Server -->
+                <a href="https://discord.gg/ultimategorillatag" target="_blank" class="button">Discord Server</a>
+            </div>
+        </section>
+
+        <!-- Discord Section -->
+        <section class="discord-section">
+            <h2>Join Our Discord</h2>
+            <a href="https://discord.gg/ultimategorillatag" target="_blank" class="discord-button">Join Discord</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Ultimate Gorilla Tag League</p>
+    </footer>
+
+</body>
+</html>

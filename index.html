@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Gorilla Tag</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #8B0000; /* Dark red background */
+            color: white;
+        }
+
+        /* Header with right-aligned nav */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #111;
+            position: relative;
+            z-index: 1000;
+        }
+
+        /* Logo on the left side */
+        header .logo img {
+            height: 80px;
+        }
+
+        /* Navigation aligned to the right */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: transparent;
+            border-radius: 20px;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: white;
+            padding: 15px 25px;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            background-color: transparent;
+        }
+
+        /* Dropdown Styles */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: black;
+            min-width: 160px;
+            z-index: 1;
+            border-radius: 5px;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Show dropdown on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: black;
+        }
+
+        /* Full-width UHD video */
+        .top-video {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        /* Responsive for mobile */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            nav ul li {
+                margin: 0;
+                width: 100%;
+            }
+
+            nav ul li a {
+                text-align: center;
+                padding: 10px 0;
+                font-size: 18px;
+            }
+
+            .top-video {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="IMG_1018.webp" alt="Ultimate Gorilla Tag Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Tournament</a>
+                    <div class="dropdown-content">
+                        <a href="matches.html">Matches</a>
+                        <a href="gamemode.html">Gamemode</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">About Us</a>
+                    <div class="dropdown-content">
+                        <a href="information.html">Information</a>
+                        <a href="https://discord.gg/ultimategorillatag" target="_blank">Discord</a>
+                        <a href="https://www.twitch.tv/ucgt_bestleague" target="_blank">Twitch</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Full-width UHD video -->
+        <video class="top-video" autoplay muted loop playsinline>
+            <!-- Replace with your UHD video file path -->
+            <source src="RPReplay_Final1732382593.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </main>
+
+    <footer>
+        <p>© 2024 Ultimate Gorilla Tag League</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Information</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #FF6347, #8B0000); /* Gradient from light red to dark red */
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #111;
+        }
+
+        /* Logo on the left side */
+        header .logo img {
+            height: 80px;
+        }
+
+        /* Navigation aligned to the right */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: transparent;
+            border-radius: 20px;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: white;
+            padding: 15px 25px;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            background-color: transparent;
+        }
+
+        /* Dropdown Styles */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: black;
+            min-width: 160px;
+            z-index: 1;
+            border-radius: 5px;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Show dropdown on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .content-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+        }
+
+        .text-content {
+            max-width: 50%;
+            padding: 20px;
+        }
+
+        .text-content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .text-content p {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .trophy-image {
+            width: 50%;
+            height: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: black;
+        }
+
+        /* Responsive for mobile */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            nav ul li {
+                margin: 0;
+                width: 100%;
+            }
+
+            nav ul li a {
+                text-align: center;
+                padding: 10px 0;
+                font-size: 18px;
+            }
+
+            .content-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .text-content {
+                max-width: 90%;
+                padding: 20px;
+            }
+
+            .text-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .trophy-image {
+                width: 80%;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="IMG_1018.webp" alt="Ultimate Gorilla Tag Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Tournament</a>
+                    <div class="dropdown-content">
+                        <a href="matches.html">Matches</a>
+                        <a href="gamemode.html">Gamemode</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">About Us</a>
+                    <div class="dropdown-content">
+                        <a href="information.html">Information</a>
+                        <a href="https://discord.gg/ultimategorillatag" target="_blank">Discord</a>
+                        <a href="https://www.twitch.tv/ucgt_bestleague" target="_blank">Twitch</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content-section">
+        <!-- Text Content -->
+        <div class="text-content">
+            <h1>About Ultimate Gorilla Tag</h1>
+            <p>UGT is a VR esports league, focusing on Gorilla Tag and its one-of-a-kind movement system. UGT unites players of all skills and is the hub for all competitive Gorilla Tag players.</p>
+            <p>Our league offers intense, fast-paced matches with a gamemode designed just for UGT. Whether you're a seasoned veteran or a newcomer, you'll find opportunities to attempt to compete in UGT.</p>
+        </div>
+
+        <!-- Trophy Image -->
+        <img src="trophyGorilla.webp" alt="Trophy Gorilla" class="trophy-image">
+    </main>
+
+    <footer>
+        <p>© 2024 Ultimate Gorilla Tag League</p>
+    </footer>
+
+</body>
+</html>
